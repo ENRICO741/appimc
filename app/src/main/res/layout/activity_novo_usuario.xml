@@ -65,6 +65,7 @@
                 app:endIconMode="clear_text">
 
                 <EditText
+                    android:id="@+id/edit_Email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"/>
@@ -81,6 +82,7 @@
                 app:passwordToggleEnabled="true">
 
                 <EditText
+                    android:id="@+id/edit_Senha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="numberPassword"/>
@@ -97,35 +99,101 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:hint="@string/login_et_email"
+                android:hint="Nome"
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 app:boxBackgroundColor="@color/white"
                 android:textColorHint="@color/purple_200"
                 app:endIconMode="clear_text">
 
                 <EditText
+                    android:id="@+id/edit_Nome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"/>
+                    android:inputType="textPersonName"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:hint="Senha"
+                android:layout_marginTop="12dp"
+                android:hint="Profissão"
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 app:boxBackgroundColor="@color/white"
                 android:textColorHint="@color/purple_200"
-                app:passwordToggleEnabled="true">
+                app:endIconMode="clear_text">
 
                 <EditText
+                    android:id="@+id/edit_Profissao"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="numberPassword"/>
+                    android:inputType="text"/>
             </com.google.android.material.textfield.TextInputLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Altura"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="@color/purple_200"
+                app:endIconMode="clear_text">
 
+                <EditText
+                    android:id="@+id/edit_Altura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Data de Nascimento"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="@color/purple_200"
+                app:endIconMode="clear_text">
+
+                <EditText
+                    android:id="@+id/edit_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="32dp"
+                android:paddingLeft="8dp"
+                android:text="Sexo"/>
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:paddingLeft="8dp">
+
+                    <RadioButton
+                        android:id="@+id/edit_RadioF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feminino"
+                        android:textColor="@color/purple_200"/>
+
+                    <RadioButton
+                        android:id="@+id/edit_RadioM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Masculino"
+                        android:textColor="@color/purple_200"/>
+
+                </RadioGroup>
 
         </LinearLayout>
 
